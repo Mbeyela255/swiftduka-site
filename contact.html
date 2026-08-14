@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SwiftDuka</title>
+<style>
+body{font-family:Inter,system-ui,sans-serif;line-height:1.8;max-width:840px;margin:0 auto;padding:56px 24px;color:#1f2937}
+h1{font-size:32px;letter-spacing:-1px;margin-bottom:12px}
+.box{background:#f8f9fb;border:1px solid #eef0f3;border-radius:14px;padding:24px;margin:24px 0;font-size:13.5px;line-height:1.9}
+label{display:block;font-weight:600;margin-top:16px;font-size:14px}
+input,textarea{width:100%;padding:12px;border:1px solid #eef0f3;border-radius:10px;margin-top:6px;font-family:inherit;font-size:14px}
+button{background:#111827;color:#fff;border:0;padding:12px 20px;border-radius:999px;font-weight:600;margin-top:20px;font-size:14px;cursor:pointer}
+a{color:#00a884;text-decoration:none}
+</style></head><body>
+<h1>Contact</h1>
+<p>We build SwiftDuka, WhatsApp Commerce Operating System for growing businesses.</p>
+
+<div class="box">
+<strong>HEMMA Ventures Limited</strong><br>
+Product: SwiftDuka<br>
+BRELA Registration: 153898251<br>
+TIN: 153-898-251<br>
+Website: https://swiftduka.co.tz<br>
+Email: emmanuel@swiftduka.com<br>
+Phone: +255 746 506 088<br><br>
+<strong>Address</strong><br>
+Dar es Salaam, Tanzania<br>
+ZIP 11101<br>
+</div>
+
+<h2 style="margin-top:32px">Send a message</h2>
+<form action="https://formsubmit.co/emmanuel@swiftduka.com" method="POST">
+<input type="hidden" name="_subject" value="New SwiftDuka contact from website">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://swiftduka.co.tz/contact.html?sent=1">
+<label>Your name</label><input type="text" name="name" required placeholder="Emmanuel">
+<label>Business name</label><input type="text" name="business" placeholder="Your duka name">
+<label>Email</label><input type="email" name="email" required placeholder="you@company.com">
+<label>Message</label><textarea rows="5" name="message" required placeholder="How can we help?"></textarea>
+<button type="submit">Send message</button>
+<p id="sent" style="display:none;margin-top:14px;color:#00a884;font-size:13px;background:#f0fdf4;border:1px solid #bbf7d0;padding:10px 14px;border-radius:10px">Thanks, message sent. We will reply to your email shortly.</p>
+</form>
+<script>
+if (window.location.search.includes('sent=1')) {
+  document.getElementById('sent').style.display='block';
+}
+</script>
+
+<p style="margin-top:36px"><a href="/">Back to home</a> • <a href="/privacy.html">Privacy</a> • <a href="/terms.html">Terms</a></p>
+</body></html>
