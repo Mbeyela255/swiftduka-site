@@ -12,6 +12,11 @@
 body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--black);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
 .container{max-width:1080px;margin:0 auto;padding:0 24px}
 header{padding:22px 0;border-bottom:1px solid var(--border)}
+.frozen-header {position: sticky; /* Tells the browser to freeze the element */
+  top: 0;           /* Sticks the header exactly to the top of the screen */
+  z-index: 1000;    /* Keeps the header on top of other scrolling content */
+  width: 100%;      /* Ensures it spans the full width of the browser */
+}
 .nav{display:flex;justify-content:space-between;align-items:center}
 .logo{font-weight:800;font-size:21px;letter-spacing:-0.6px}.logo span{color:var(--green)}
 nav a{margin-left:28px;text-decoration:none;color:var(--black);font-size:14px;font-weight:500}
@@ -39,7 +44,7 @@ footer a{color:var(--gray);text-decoration:none}footer a:hover{color:var(--black
 </style>
 </head>
 <body>
-<header><div class="container nav"><div class="logo">SwiftDuka<span>.</span></div><nav><a href="#product">Product</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a class="cta" href="/contact.html">Request demo</a></nav></div></header>
+<header class="frozen-header"><div class="container nav"><div class="logo">SwiftDuka<span>.</span></div><nav><a href="#product">Product</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a class="cta" href="/contact.html">Request demo</a></nav></div></header>
 <div class="container"><div class="hero"><div>
 <h1>Sell on WhatsApp.<br><i>Like a pro.</i></h1>
 <p>SwiftDuka is the Commerce OS for growing businesses. Catalogs, orders, mobile money and delivery tracking, all inside WhatsApp.</p>
